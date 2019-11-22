@@ -1,0 +1,19 @@
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class Pause : MonoBehaviour
+{
+    // Update is called once per frame
+    void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Escape) || Input.GetKeyDown(KeyCode.R)) {
+            gameObject.SetActive(false);
+            Time.timeScale = 1f;
+        }
+        else if (Input.GetKeyDown(KeyCode.Q)) {
+            Application.Quit();
+        }
+
+    }
+}
