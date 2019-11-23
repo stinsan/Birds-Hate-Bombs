@@ -13,4 +13,4 @@ BHB is currently hosted on simmer.io, [click here](https://simmer.io/@Stinsan/bi
 - **S / Down-Arrow**: Move down
 
 ### Gameplay: 
-![](https://media.giphy.com/media/YmWNsII8HMy1JodVXZ/giphy.gif)
+> ![](https://media.giphy.com/media/YmWNsII8HMy1JodVXZ/giphy.gif)
