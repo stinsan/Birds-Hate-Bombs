@@ -26,6 +26,11 @@ public class PlayerController : MonoBehaviour
     public int health;
 
     public float timeElapsed = 0;
+
+    void Start() {
+        targetPos = new Vector2(transform.position.x, transform.position.y);
+    }
+
     void Update() {
 
         // Pause the game
@@ -54,7 +59,7 @@ public class PlayerController : MonoBehaviour
             Instantiate(upEffect, transform.position, Quaternion.identity);
             targetPos = new Vector2(transform.position.x, transform.position.y + yIncrement);
         }
-        // Down arrow or Smovement
+        // Down arrow or S movement
         else if ((Input.GetKeyDown(KeyCode.DownArrow) || Input.GetKeyDown(KeyCode.S)) 
             && transform.position.y - yIncrement >= minHeight) {
 

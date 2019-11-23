@@ -10,16 +10,23 @@ public class Obstacle : MonoBehaviour
 
     public int damage = 1;
     public float speed;
-    public float increaseSpeed = 0.5f;
-    public float maxSpeed = 20;
+
+    private float timeElapsed = 0;
+
+    public float speedMultiplierCoefficient;
+    private float speedMultiplier = 1;
 
     private void Start() {
         shake = GameObject.FindGameObjectWithTag("ScreenShake").GetComponent<Shake>();
     }
 
     private void Update() {
+        timeElapsed = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerController>().timeElapsed;
+        speedMultiplier = 1 + (speedMultiplierCoefficient * timeElapsed);
 
-        transform.Translate(Vector2.left * speed * Time.deltaTime);
+        transform.Translate(Vector2.left * (speed * speedMultiplier) * Time.deltaTime);
+
+        Debug.Log("Speed: " + (speed * speedMultiplier).ToString());
     }
 
     void OnTriggerEnter2D(Collider2D other) {
@@ -33,7 +40,7 @@ public class Obstacle : MonoBehaviour
             Instantiate(explosionSound, transform.position, Quaternion.identity); // Explosion sound on collision with player
 
             other.GetComponent<PlayerController>().health -= damage;
-            Debug.Log("Health = " + other.GetComponent<PlayerController>().health);
+            //Debug.Log("Health = " + other.GetComponent<PlayerController>().health);
             Destroy(gameObject);
         }
     }

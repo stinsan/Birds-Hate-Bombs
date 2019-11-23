@@ -10,9 +10,6 @@ public class MainMenu : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.P)) {
             SceneManager.LoadScene("Main");
         } 
-        else if (Input.GetKeyDown(KeyCode.Q)) {
-            Application.Quit();
-        }
 
     }
 }

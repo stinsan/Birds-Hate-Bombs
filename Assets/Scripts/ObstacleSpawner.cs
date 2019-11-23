@@ -7,21 +7,16 @@ public class ObstacleSpawner : MonoBehaviour
     public GameObject[] obstaclePatterns;
 
     private float timeBetweenSpawn;
-    public float startTimeBetweenSpawn;
-    public float decreaseTime;
-    public float minTime = 0.65f;
-
+    public float timeBetweenSpawnLowerBound;
+    public float timeBetweenSpawnUpperBound;
+    
     private void Update() {
         
         if (timeBetweenSpawn <= 0) {
 
             int randomNum = Random.Range(0, obstaclePatterns.Length);
             Instantiate(obstaclePatterns[randomNum], transform.position, Quaternion.identity);
-            timeBetweenSpawn = startTimeBetweenSpawn;
-
-            if (startTimeBetweenSpawn > minTime) {
-                startTimeBetweenSpawn -= decreaseTime;
-            }
+            timeBetweenSpawn = Random.Range(timeBetweenSpawnLowerBound, timeBetweenSpawnUpperBound);
         }
         else {
 

@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.SceneManagement;
 public class RepeatingBackground : MonoBehaviour
 {
     public float speed;
@@ -9,13 +9,25 @@ public class RepeatingBackground : MonoBehaviour
     public float endX;
     public float startX;
 
-    // Update is called once per frame
-    void Update()
-    {
-        transform.Translate(Vector2.left * speed * Time.deltaTime);
+    private float timeElapsed = 0;
 
-        // + 0.2 to prevent (very) small gaps between repeats
-        if (transform.position.x <= endX + 0.2) {
+    public float speedMultiplierCoefficient;
+    private float speedMultiplier;
+
+    void Update() {
+
+        if (SceneManager.GetActiveScene().name == "Main") { // Background speeds up if in main game
+            timeElapsed = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerController>().timeElapsed;
+            speedMultiplier = 1 + (speedMultiplierCoefficient * timeElapsed);
+        }
+        else if (SceneManager.GetActiveScene().name == "Menu") { // Background speed is constant if in menu
+            speedMultiplier = 1;
+        }
+
+        transform.Translate(Vector2.left * (speed * speedMultiplier) * Time.deltaTime);
+
+        // + 0.5 to prevent (very) small gaps between repeats
+        if (transform.position.x <= endX + 0.5) {
             Vector3 pos = new Vector3(startX, transform.position.y, transform.position.z);
             transform.position = pos;
         }

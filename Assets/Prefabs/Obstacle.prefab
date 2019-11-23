@@ -115,9 +115,8 @@ MonoBehaviour:
   explosionSound: {fileID: 9014352596823077187, guid: 3804f54d2deb63a4c8e631a7d0fd208e,
     type: 3}
   damage: 1
-  speed: 5
-  increaseSpeed: 0.5
-  maxSpeed: 20
+  speed: 7
+  speedMultiplierCoefficient: 0.025
 --- !u!114 &114178404494733334
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -130,7 +129,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0b55af445c5078d4cb56db6b3a4a09d8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lifetime: 10
+  lifetime: 5
 --- !u!95 &4798913127092621435
 Animator:
   serializedVersion: 3

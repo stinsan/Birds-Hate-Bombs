@@ -11,9 +11,6 @@ public class Pause : MonoBehaviour
             gameObject.SetActive(false);
             Time.timeScale = 1f;
         }
-        else if (Input.GetKeyDown(KeyCode.Q)) {
-            Application.Quit();
-        }
 
     }
 }

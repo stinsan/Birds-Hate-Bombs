@@ -145,6 +145,7 @@ MonoBehaviour:
   speed: 1
   endX: -21.607
   startX: 22.5
+  speedMultiplierCoefficient: 0
 --- !u!212 &1564111
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -391,6 +392,7 @@ MonoBehaviour:
   speed: 5
   endX: -21.607
   startX: 22.5
+  speedMultiplierCoefficient: 0
 --- !u!212 &296339421
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -487,8 +489,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 211, y: -88.61}
-  m_SizeDelta: {x: 400, y: 50}
+  m_AnchoredPosition: {x: 310, y: -125}
+  m_SizeDelta: {x: 600, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &296533944
 MonoBehaviour:
@@ -510,7 +512,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: '[p]lay
 
-    [q]uit'
+'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -538,8 +540,8 @@ MonoBehaviour:
   m_outlineColor:
     serializedVersion: 2
     rgba: 4278190080
-  m_fontSize: 28
-  m_fontSizeBase: 28
+  m_fontSize: 40
+  m_fontSizeBase: 40
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -579,12 +581,12 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: -37.89279}
   m_textInfo:
     textComponent: {fileID: 296533944}
-    characterCount: 13
+    characterCount: 7
     spriteCount: 0
     spaceCount: 1
-    wordCount: 4
+    wordCount: 2
     linkCount: 0
-    lineCount: 2
+    lineCount: 1
     pageCount: 1
     materialCount: 1
   m_isUsingLegacyAnimationComponent: 0
@@ -709,6 +711,7 @@ MonoBehaviour:
   speed: 1
   endX: -21.607
   startX: 22.5
+  speedMultiplierCoefficient: 0
 --- !u!212 &668257878
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -804,6 +807,7 @@ MonoBehaviour:
   speed: 3
   endX: -21.607
   startX: 22.5
+  speedMultiplierCoefficient: 0
 --- !u!212 &706945162
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -899,6 +903,7 @@ MonoBehaviour:
   speed: 5
   endX: -21.607
   startX: 22.5
+  speedMultiplierCoefficient: 0
 --- !u!212 &777754130
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1192,7 +1197,7 @@ AudioSource:
   m_PlayOnAwake: 1
   m_Volume: 0.2
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -1307,6 +1312,7 @@ MonoBehaviour:
   speed: 3
   endX: -21.607
   startX: 22.5
+  speedMultiplierCoefficient: 0
 --- !u!212 &1720319426
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1403,8 +1409,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 211, y: -42.3}
-  m_SizeDelta: {x: 400, y: 50}
+  m_AnchoredPosition: {x: 310, y: -45}
+  m_SizeDelta: {x: 600, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2132736392
 MonoBehaviour:
@@ -1452,8 +1458,8 @@ MonoBehaviour:
   m_outlineColor:
     serializedVersion: 2
     rgba: 4278190080
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 64
+  m_fontSizeBase: 64
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -1469,7 +1475,7 @@ MonoBehaviour:
   m_enableWordWrapping: 1
   m_wordWrappingRatios: 0.4
   m_overflowMode: 0
-  m_firstOverflowCharacterIndex: -1
+  m_firstOverflowCharacterIndex: 0
   m_linkedTextComponent: {fileID: 0}
   m_isLinkedTextComponent: 0
   m_isTextTruncated: 0
