@@ -4,6 +4,8 @@
 [Tt]emp/
 [Oo]bj/
 /[Ll]ibrary/
+/[Bb]uild/
+/[Bb]uilds/
 [Aa]ssets/TextMesh*Pro/
 sysinfo.txt
 *.stackdump
