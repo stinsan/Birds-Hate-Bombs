@@ -6,3 +6,8 @@ Birds Hate Bombs, or **BHB** as the cool birds call it, is an endless runner gam
 I continued working on this game even after the Jam ended, but if you want to see the original submission, [click here](https://stinsan.itch.io/birds-hate-bombs).
 
 ## Want to Play?
+BHB is currently hosted on simmer.io, [Click here](https://simmer.io/@Stinsan/birds-hate-bombs) to play!
+
+### Controls
+- **W / Up-Arrow**: Move up
+- **S / Down-Arrow**: Move down
