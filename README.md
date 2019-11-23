@@ -8,9 +8,9 @@ I continued working on this game even after the Jam ended, but if you want to se
 ## Want to Play?
 BHB is currently hosted on simmer.io, [click here](https://simmer.io/@Stinsan/birds-hate-bombs) to play!
 
-### Controls
+### Controls:
 - **W / Up-Arrow**: Move up
 - **S / Down-Arrow**: Move down
 
-### Gameplay
+### Gameplay: 
 ![](https://media.giphy.com/media/YmWNsII8HMy1JodVXZ/giphy.gif)
