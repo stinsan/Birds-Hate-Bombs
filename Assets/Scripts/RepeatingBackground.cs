@@ -14,7 +14,8 @@ public class RepeatingBackground : MonoBehaviour
     {
         transform.Translate(Vector2.left * speed * Time.deltaTime);
 
-        if (transform.position.x <= endX) {
+        // + 0.2 to prevent (very) small gaps between repeats
+        if (transform.position.x <= endX + 0.2) {
             Vector3 pos = new Vector3(startX, transform.position.y, transform.position.z);
             transform.position = pos;
         }
