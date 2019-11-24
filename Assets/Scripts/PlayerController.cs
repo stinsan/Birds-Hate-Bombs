@@ -13,6 +13,8 @@ public class PlayerController : MonoBehaviour
     public GameObject gameOverSound;
     public GameObject pauseMenu;
 
+    public Animator playerAnim;
+
     public TextMeshProUGUI healthDisplay;
     public TextMeshProUGUI scoreDisplay;
 

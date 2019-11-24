@@ -114,6 +114,7 @@ MonoBehaviour:
   effect: {fileID: 6105795415808971717, guid: 35ae49f2f4685e04098d992bda9906f0, type: 3}
   explosionSound: {fileID: 9014352596823077187, guid: 3804f54d2deb63a4c8e631a7d0fd208e,
     type: 3}
+  playerAnim: {fileID: 0}
   damage: 1
   speed: 7
   speedMultiplierCoefficient: 0.025

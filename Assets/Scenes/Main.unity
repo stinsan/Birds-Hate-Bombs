@@ -436,8 +436,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 1.5
-  endX: -19.85
-  startX: 22
+  endX: -19.941
+  startX: 22.036
   speedMultiplierCoefficient: 0.025
 --- !u!212 &414358935
 SpriteRenderer:
@@ -495,7 +495,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 414358933}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 22.05, y: -2.01, z: 10}
+  m_LocalPosition: {x: 22.036, y: -1.9990001, z: 10}
   m_LocalScale: {x: 2.15, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -616,7 +616,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 20fb12dbadf3c584485875bdb7efa57b, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.2
+  m_Volume: 0.5
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -888,8 +888,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 1.5
-  endX: -19.85
-  startX: 22
+  endX: -19.941
+  startX: 22.036
   speedMultiplierCoefficient: 0.025
 --- !u!212 &570976525
 SpriteRenderer:
@@ -1313,8 +1313,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 0.5
-  endX: -19.85
-  startX: 22
+  endX: -19.941
+  startX: 22.036
   speedMultiplierCoefficient: 0.025
 --- !u!212 &1261071681
 SpriteRenderer:
@@ -1372,7 +1372,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1261071679}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 22.05, y: -1.3, z: 11}
+  m_LocalPosition: {x: 22.036, y: -1.289, z: 11}
   m_LocalScale: {x: 2.15, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1564,8 +1564,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 0.5
-  endX: -19.85
-  startX: 22
+  endX: -19.941
+  startX: 22.036
   speedMultiplierCoefficient: 0.025
 --- !u!212 &1362896716
 SpriteRenderer:
@@ -1862,8 +1862,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 3
-  endX: -19.85
-  startX: 22
+  endX: -19.941
+  startX: 22.036
   speedMultiplierCoefficient: 0.025
 --- !u!212 &1688232095
 SpriteRenderer:
@@ -1921,7 +1921,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1688232093}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 22.05, y: -3, z: 0}
+  m_LocalPosition: {x: 22.036, y: -2.989, z: 0}
   m_LocalScale: {x: 2.15, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1958,8 +1958,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 3
-  endX: -19.85
-  startX: 22
+  endX: -19.941
+  startX: 22.036
   speedMultiplierCoefficient: 0.025
 --- !u!212 &1729032855
 SpriteRenderer:

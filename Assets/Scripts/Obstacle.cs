@@ -35,6 +35,8 @@ public class Obstacle : MonoBehaviour
 
             shake.CamShake(); // Camera shake on collision with player
 
+            GameObject.FindGameObjectWithTag("Player").GetComponent<Animator>().SetTrigger("BombHit");
+
             Instantiate(effect, transform.position, Quaternion.identity); // Explosion particle effects on collision with player
 
             Instantiate(explosionSound, transform.position, Quaternion.identity); // Explosion sound on collision with player
