@@ -12,5 +12,5 @@ I continued working on this game even after the Jam ended, with the most current
 - **W or Up-Arrow**: Move up
 - **S or Down-Arrow**: Move down
 
-## Gamplay
+## Gameplay
 ![](https://media.giphy.com/media/YmWNsII8HMy1JodVXZ/giphy.gif)
