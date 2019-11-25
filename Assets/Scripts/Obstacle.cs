@@ -26,7 +26,7 @@ public class Obstacle : MonoBehaviour
 
         transform.Translate(Vector2.left * (speed * speedMultiplier) * Time.deltaTime);
 
-        Debug.Log("Speed: " + (speed * speedMultiplier).ToString());
+       //Debug.Log("Speed: " + (speed * speedMultiplier).ToString());
     }
 
     void OnTriggerEnter2D(Collider2D other) {

@@ -19,7 +19,7 @@ public class PlayerController : MonoBehaviour
     public TextMeshProUGUI scoreDisplay;
 
     private Vector2 targetPos;
-    public int yIncrement;
+    public float yIncrement;
 
     public float speed;
     public float maxHeight;
@@ -28,6 +28,8 @@ public class PlayerController : MonoBehaviour
     public int health;
 
     public float timeElapsed = 0;
+
+    public List<float> validY = new List<float> { -3, 0, 3 };
 
     void Start() {
         targetPos = new Vector2(transform.position.x, transform.position.y);
@@ -55,15 +57,17 @@ public class PlayerController : MonoBehaviour
         scoreDisplay.text = "score: " + ((int)(timeElapsed * 100)).ToString();
 
         // Up arrow or W movement
-        if ((Input.GetKeyDown(KeyCode.UpArrow) || Input.GetKeyDown(KeyCode.W)) 
-            && transform.position.y + yIncrement <= maxHeight) {
+        if ((Input.GetKeyDown(KeyCode.UpArrow) || Input.GetKeyDown(KeyCode.W))
+            && transform.position.y + yIncrement <= maxHeight
+            && validY.Contains(transform.position.y)) {
 
             Instantiate(upEffect, transform.position, Quaternion.identity);
             targetPos = new Vector2(transform.position.x, transform.position.y + yIncrement);
         }
         // Down arrow or S movement
-        else if ((Input.GetKeyDown(KeyCode.DownArrow) || Input.GetKeyDown(KeyCode.S)) 
-            && transform.position.y - yIncrement >= minHeight) {
+        else if ((Input.GetKeyDown(KeyCode.DownArrow) || Input.GetKeyDown(KeyCode.S))
+            && transform.position.y - yIncrement >= minHeight
+            && validY.Contains(transform.position.y)) {
 
             Instantiate(downEffect, transform.position, Quaternion.identity);
             targetPos = new Vector2(transform.position.x, transform.position.y - yIncrement);
