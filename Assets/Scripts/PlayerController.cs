@@ -26,6 +26,8 @@ public class PlayerController : MonoBehaviour
     public float minHeight;
 
     public int health;
+    public float score;
+    public float gemScore = 0;
 
     public float timeElapsed = 0;
 
@@ -54,7 +56,8 @@ public class PlayerController : MonoBehaviour
         healthDisplay.text = "health: " + health.ToString();
 
         // Set score to time elapsed * 100
-        scoreDisplay.text = "score: " + ((int)(timeElapsed * 100)).ToString();
+        score = ((int)(timeElapsed * 100)) + gemScore;
+        scoreDisplay.text = "score: " + score.ToString();
 
         // Up arrow or W movement
         if ((Input.GetKeyDown(KeyCode.UpArrow) || Input.GetKeyDown(KeyCode.W))

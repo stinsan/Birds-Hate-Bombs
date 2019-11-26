@@ -314,6 +314,8 @@ MonoBehaviour:
   maxHeight: 3
   minHeight: -3
   health: 5
+  score: 0
+  gemScore: 0
   timeElapsed: 0
   validY:
   - -3
@@ -2127,8 +2129,19 @@ MonoBehaviour:
   - {fileID: 6910609598903588786, guid: 960672d971a87bb428481daaec765dff, type: 3}
   - {fileID: 2323964489296402915, guid: 89a201c5ffe6c8a4aa79999caf3bfc3f, type: 3}
   - {fileID: 2914628915596735115, guid: 2b51d40e50e8d0a44aab951a15a541cb, type: 3}
-  timeBetweenSpawnLowerBound: 0.65
-  timeBetweenSpawnUpperBound: 1.65
+  greenGemPatterns:
+  - {fileID: 4307469433979086090, guid: 456d8c7fc12f118499be808dcde0f019, type: 3}
+  - {fileID: 5053076050648058055, guid: d90a4559d0a1ca74f9537fd8f75f5f83, type: 3}
+  - {fileID: 1589192090903823746, guid: 93d0c41c155790147a7bb68f6572bdfc, type: 3}
+  - {fileID: 5225511850630168570, guid: 8c3899c5c9dc47c4c8356d554d81b449, type: 3}
+  - {fileID: 3750188784315546848, guid: 79e5ec981ce17d74c94f663afe698b60, type: 3}
+  - {fileID: 4340729056979036451, guid: 1be087d68258764439d600654b1f5575, type: 3}
+  spawnTimerLowerBound: 0.9
+  spawnTimerUpperBound: 1.65
+  lowerBoundIncreaseTo: 0.9
+  upperBoundDecreaseTo: 1
+  timeShiftCoefficient: 0.004
+  gemSpawnProbability: 0.1
 --- !u!4 &1950466677
 Transform:
   m_ObjectHideFlags: 0
