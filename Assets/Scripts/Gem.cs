@@ -5,8 +5,7 @@ using UnityEngine;
 public class Gem : MonoBehaviour
 {
     public GameObject[] gemSounds;
-
-    public string gemColor;
+    public GameObject effect;
 
     public float speed;
 
@@ -32,17 +31,14 @@ public class Gem : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D other) {
 
-        int randGemSounds = Random.Range(0, 3);
-        Instantiate(gemSounds[randGemSounds], transform.position, Quaternion.identity); // Coin sound on collision with player
-
         if (other.CompareTag("Player")) {
 
-            if (gemColor.Equals("green")) {
-                other.GetComponent<PlayerController>().gemScore += 500;
-            }
-            else if (gemColor.Equals("orange")) {
-                other.GetComponent<PlayerController>().gemScore += 1000;
-            }
+            int randGemSounds = Random.Range(0, gemSounds.Length);
+            Instantiate(gemSounds[randGemSounds], transform.position, Quaternion.identity); // Random coin sound on collision with player
+
+            Instantiate(effect, transform.position, Quaternion.identity); // Gem particle effect on collision with player
+
+            other.GetComponent<PlayerController>().gemScore += 500; // +500 to score when gem collected
 
             Destroy(gameObject);
         }

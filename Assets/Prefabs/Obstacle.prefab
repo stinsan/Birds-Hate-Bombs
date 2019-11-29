@@ -29,7 +29,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1745732323710792380}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.69, y: 0.16, z: -0.040419295}
+  m_LocalPosition: {x: 2.69, y: 1, z: -0.040419295}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -112,9 +112,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   effect: {fileID: 6105795415808971717, guid: 35ae49f2f4685e04098d992bda9906f0, type: 3}
-  explosionSound: {fileID: 9014352596823077187, guid: 3804f54d2deb63a4c8e631a7d0fd208e,
-    type: 3}
-  playerAnim: {fileID: 0}
+  explosionSounds:
+  - {fileID: 9014352596823077187, guid: 3804f54d2deb63a4c8e631a7d0fd208e, type: 3}
+  - {fileID: 2779015106782524911, guid: 09f9d32b3b036da48b0d71feb092e804, type: 3}
+  - {fileID: 2096313268641916965, guid: e68ba6721db4d9f44bc7aa16b28dbccd, type: 3}
+  - {fileID: 4662570023433903703, guid: fb2a2eb7001ceea4aa586c5fc5d157ee, type: 3}
+  - {fileID: 3083930575746222732, guid: d8782a8862e0cc24b923597714d45e8d, type: 3}
   damage: 1
   speed: 7
   speedMultiplierCoefficient: 0.025

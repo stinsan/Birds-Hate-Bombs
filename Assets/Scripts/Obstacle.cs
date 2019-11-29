@@ -5,7 +5,7 @@ using UnityEngine;
 public class Obstacle : MonoBehaviour
 {
     public GameObject effect;
-    public GameObject explosionSound;
+    public GameObject[] explosionSounds;
     private Shake shake;
 
     public int damage = 1;
@@ -39,7 +39,8 @@ public class Obstacle : MonoBehaviour
 
             Instantiate(effect, transform.position, Quaternion.identity); // Explosion particle effects on collision with player
 
-            Instantiate(explosionSound, transform.position, Quaternion.identity); // Explosion sound on collision with player
+            int randomSound = Random.Range(0, explosionSounds.Length);
+            Instantiate(explosionSounds[randomSound], transform.position, Quaternion.identity); // Explosion sound on collision with player
 
             other.GetComponent<PlayerController>().health -= damage;
             //Debug.Log("Health = " + other.GetComponent<PlayerController>().health);
