@@ -14,3 +14,10 @@ I continued working on this game even after the Jam ended, with the most current
 
 ## Gameplay
 ![](https://media.giphy.com/media/YmWNsII8HMy1JodVXZ/giphy.gif)
+
+## Special Thanks
+Thanks to the creators of the free assets that I used on the Unity Store: 
+- [Unity Technologies](https://assetstore.unity.com/packages/essentials/asset-packs/2d-sprites-pack-73728) for the bird, bomb, and explosion sprites.
+- [Ahninniah](https://assetstore.unity.com/packages/2d/environments/free-game-items-131764) for the feather and gem sprites.
+- [Marching Dream](https://assetstore.unity.com/packages/audio/music/loop-music-free-111896) for the background music.
+- [Zero Rare](https://assetstore.unity.com/packages/audio/sound-fx/sound-fx-retro-pack-121743) for the coin and explosion sound effects.
